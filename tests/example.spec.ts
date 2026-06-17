@@ -24,7 +24,6 @@ test("can see all the views", async ({ page }) => {
     for (const route of routes) {
       await test.step(`Testing route: ${route}`, async () => {
         await page.goto(route);
-        await page.getByRole("link", { name: "Poll" }).click();
         const trmnlFrame = page.frameLocator("iframe");
         await expect
           .soft(trmnlFrame.locator("div.view"))
