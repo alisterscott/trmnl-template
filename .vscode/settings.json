@@ -8,5 +8,8 @@
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "typescript.preferences.quoteStyle": "single",
-  "playwright.env": {}
+  "playwright.env": {},
+  "chat.tools.terminal.autoApprove": {
+    "npm install": true
+  }
 }
